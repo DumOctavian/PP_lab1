@@ -28,6 +28,9 @@ class Main{
 
     public static void main(String argv[])
     {
+        //docker build -t java-reader .
+        //docker run java-reader
+
         Main c = new Main();  // c este un obiect de tip clasa Main
         c.citeste("d:\\PP\\L1\\pb2_git\\src\\text.txt");  //se apeleaza metoda de citire din fisier
 
@@ -41,5 +44,8 @@ class Main{
 
         text=op.StergeCifre(c.buf);
         System.out.println("textul fara cifre este:\n"+text);
+
+        text=op.InversLitere(c.buf);
+        System.out.println("textul cu cifrele inversate este:\n"+text);
     }
 }

@@ -22,4 +22,42 @@ public class Operatii {
         return ceva;
     }
 
+    //Inversare litere
+    public String InversLitere(String text)
+    {
+        String ceva="";
+
+        int n=text.length();
+        for(int i=0;i<n;i++)
+        {
+            char c=text.charAt(i);
+
+            if(Character.isLetter(c))
+            {
+                if(Character.isUpperCase(c))
+                {
+                    ceva=ceva+Character.toLowerCase(c);
+                }
+                else
+                {
+                    ceva=ceva+Character.toUpperCase(c);
+                }
+            }
+            else
+            {
+                ceva=ceva+c;
+            }
+        }
+        return ceva;
+    }
+
+    /*
+    //eliminare spatii multiple
+    public String StergereSpatii(String text)
+    {
+        String ceva=text;
+
+        return ceva;
+    }
+     */
 }

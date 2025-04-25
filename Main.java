@@ -32,5 +32,11 @@ class Main{
         c.citeste("d:\\PP\\L1\\pb2_git\\src\\text.txt");  //se apeleaza metoda de citire din fisier
 
         System.out.println(c.buf);
+
+        Operatii op = new Operatii();
+        String text="";
+
+        text=op.StergeSemn(c.buf);
+        System.out.println("textul fara semne este:\n"+text);
     }
 }

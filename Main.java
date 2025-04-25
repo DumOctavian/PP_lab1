@@ -38,5 +38,8 @@ class Main{
 
         text=op.StergeSemn(c.buf);
         System.out.println("textul fara semne este:\n"+text);
+
+        text=op.StergeCifre(c.buf);
+        System.out.println("textul fara cifre este:\n"+text);
     }
 }

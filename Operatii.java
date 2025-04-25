@@ -13,12 +13,13 @@ public class Operatii {
         }
         return ceva;
     }
-    /*
+
     //eliminare cifre
     public String StergeCifre(String text)
     {
         String ceva=text;
+        ceva=ceva.replaceAll("([1-9])", "");
         return ceva;
     }
-     */
+
 }

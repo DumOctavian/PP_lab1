@@ -51,13 +51,12 @@ public class Operatii {
         return ceva;
     }
 
-    /*
     //eliminare spatii multiple
     public String StergereSpatii(String text)
     {
         String ceva=text;
-
+        ceva=ceva.replaceAll("\\s+"," ").trim();
         return ceva;
     }
-     */
+
 }

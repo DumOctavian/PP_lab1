@@ -47,5 +47,18 @@ class Main{
 
         text=op.InversLitere(c.buf);
         System.out.println("textul cu cifrele inversate este:\n"+text);
+
+        text=op.StergereSpatii(c.buf);
+        System.out.println("textul cu spatiile sterse este:\n"+text);
+
+
+        System.out.println();
+        text=op.StergereSpatii(c.buf);
+        text=op.StergeCifre(text);
+        System.out.println("textul modif partial este:\n"+text);
+
+        text=op.StergeSemn(text);
+        text=op.InversLitere(text);
+        System.out.println("textul modif total este:\n"+text);
     }
 }
